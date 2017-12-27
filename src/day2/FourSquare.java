@@ -5,6 +5,7 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class FourSquare {
 	
+<<<<<<< HEAD
 	// 2. Create a new Robot
 	Robot c3po = new Robot();
 
@@ -24,6 +25,20 @@ public class FourSquare {
 		c3po.turn(90);
 		// 8. Turn the robot 90 degrees to the right
 		}
+=======
+	Robot r = new Robot();
+
+	void go() {
+		r.setSpeed(200);
+		r.setPenWidth(5);
+		
+		for(int i = 0; i < 4; i++) {
+			r.setRandomPenColor();
+			drawSquare();
+			r.turn(90);
+		}
+
+>>>>>>> origin/master
 	}
 
 	/* 3. Fill in the code to draw a square inside the method below. */
@@ -36,9 +51,13 @@ public class FourSquare {
 		}
 		
 		JOptionPane.showMessageDialog(null, "yay! you called the drawSquare() method!");
-
 		
-		
+		r.penDown();
+		for(int i = 0; i < 4; i++) {
+			r.move(200);
+			r.turn(90);
+		}
+		r.penUp();
 	}
 
 	public static void main(String[] args) {
