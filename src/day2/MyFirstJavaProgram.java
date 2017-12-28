@@ -8,15 +8,6 @@ public class MyFirstJavaProgram {
 	public static void main(String[] args) {
 		Robot r = new Robot();
 		
-<<<<<<< HEAD
-		// START HERE
-	Robot c3po = new Robot();
-	c3po.setSpeed(500);
-	c3po.move(180);
-	c3po.setAngle(45);
-	c3po.move(90);
-	c3po.setAngle
-=======
 		int angle = 45;
 		r.setSpeed(20);
 		r.penDown();
@@ -29,6 +20,5 @@ public class MyFirstJavaProgram {
 			}
 			angle = -angle;
 		}
->>>>>>> origin/master
 	}
 }
